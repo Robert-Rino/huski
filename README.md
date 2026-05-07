@@ -5,8 +5,8 @@ Reusable [pi](https://pi.dev) package for Huski workflows, skills, extensions, a
 ## What this package includes
 - `extensions/` for TypeScript extensions
 - `skills/` for reusable Agent Skills
-- `skills/web-fetch/` as a shared skill for online research
-- `skills/youtube-transcript/` for YouTube subtitle/transcript extraction
+  - `web-fetch` — shared skill for online research
+  - `youtube-transcript` — YouTube subtitle/transcript extraction
 - `web_search` and `web_fetch` tools for direct model access
 
 ## Repository layout
