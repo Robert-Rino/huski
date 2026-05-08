@@ -61,6 +61,7 @@ Current skills:
 - `huski-workflow`
 - `web-fetch`
 - `youtube-transcript`
+- `audio-transcript`
 
 ### YouTube transcript skill
 
@@ -70,6 +71,16 @@ Use this skill first when a user pastes a YouTube URL or asks for a summary/tran
 node skills/youtube-transcript/scripts/youtube-transcript.mjs "https://www.youtube.com/watch?v=VIDEO_ID"
 node skills/youtube-transcript/scripts/youtube-transcript.mjs "https://www.youtube.com/watch?v=VIDEO_ID" --lang en --plain
 node skills/youtube-transcript/scripts/youtube-transcript.mjs "https://www.youtube.com/watch?v=VIDEO_ID" --json
+```
+
+### Audio transcript skill
+
+Use this skill for local audio or video files.
+
+```bash
+node skills/audio-transcript/scripts/audio-transcript.mjs "/path/to/file.m4a"
+node skills/audio-transcript/scripts/audio-transcript.mjs "/path/to/file.m4a" --lang en --json
+node skills/audio-transcript/scripts/audio-transcript.mjs "/path/to/file.m4a" --output transcript.txt
 ```
 
 ### Add a new extension
