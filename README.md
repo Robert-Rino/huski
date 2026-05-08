@@ -6,7 +6,8 @@ Reusable [pi](https://pi.dev) package for Huski workflows, skills, extensions, a
 - `extensions/` for TypeScript extensions
 - `skills/` for reusable Agent Skills
   - `web-fetch` — shared skill for online research
-  - `youtube-transcript` — YouTube subtitle/transcript extraction
+  - `youtube-transcript` — YouTube subtitle/transcript extraction (use for YouTube links, ids, and video summaries)
+  - `audio-transcript` — local audio/video file transcription
 - `web_search` and `web_fetch` tools for direct model access
 
 ## Repository layout
@@ -62,6 +63,8 @@ Current skills:
 - `youtube-transcript`
 
 ### YouTube transcript skill
+
+Use this skill first when a user pastes a YouTube URL or asks for a summary/transcript of a YouTube video.
 
 ```bash
 node skills/youtube-transcript/scripts/youtube-transcript.mjs "https://www.youtube.com/watch?v=VIDEO_ID"

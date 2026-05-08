@@ -1,14 +1,14 @@
 ---
 name: youtube-transcript
-description: Extracts transcripts, subtitles, and caption text from YouTube videos. Use when you need a readable transcript, subtitle file, or caption text from a YouTube URL or video id.
+description: Extracts transcripts, subtitles, and caption text from YouTube videos. Use when the user shares a YouTube URL/video id or asks for a video summary, transcript, subtitles, or captions.
 ---
 
 # YouTube Transcript
 
-Use this skill to turn a YouTube video into transcript text.
+Use this skill whenever the user gives a YouTube link/video id or asks to summarize a YouTube video.
 
 ## Workflow
-1. Get the YouTube URL or video id.
+1. If the input looks like a YouTube URL (`youtube.com/watch`, `youtu.be`) or a video id, use this skill first.
 2. Run the transcript script.
 3. Save, convert, or summarize the transcript.
 
@@ -59,5 +59,5 @@ node scripts/youtube-transcript.mjs "https://www.youtube.com/watch?v=VIDEO_ID" -
 ## Notes
 - The script uses the `youtube-transcript` package first.
 - It falls back to YouTube's web transcript flow when needed.
-- If no transcript exists, the script exits with a clear error.
+- If no transcript exists or captions are disabled, say so clearly and then optionally summarize from the title/metadata.
 - Prefer official captions when available.
